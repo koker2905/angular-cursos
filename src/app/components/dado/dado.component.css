@@ -1,0 +1,35 @@
+.dado-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .dado-imagen {
+    width: 100px;
+    height: 100px;
+  }
+  
+  span {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 1rem;
+    width: 5rem;
+    text-align: center;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: darkblue;
+  }
+  

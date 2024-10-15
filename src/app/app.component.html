@@ -94,7 +94,7 @@
 
   .divider {
     width: 1px;
-    background: var(--red-to-pink-to-purple-vertical-gradient);
+    background: black;
     margin-inline: 0.5rem;
   }
 
@@ -225,8 +225,16 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
-      <h1>Hello, {{ title }}</h1>
-      <p>Congratulations! Your app is running. 🎉</p>
+      
+     <div>
+
+      <router-outlet />
+
+     </div>
+
+     
+
+
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
@@ -237,11 +245,14 @@
           { title: 'CLI Docs', link: 'https://angular.dev/tools/cli' },
           { title: 'Angular Language Service', link: 'https://angular.dev/tools/language-service' },
           { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' },
+          { title: 'Inicio:', link: 'http://localhost:4200/pages/inicio' },
+          { title: 'Mision:', link: 'http://localhost:4200/pages/mision' },
+          { title: 'Acerca De:', link: 'http://localhost:4200/pages/acerca-de' },
         ]; track item.title) {
           <a
             class="pill"
             [href]="item.link"
-            target="_blank"
+           
             rel="noopener"
           >
             <span>{{ item.title }}</span>
@@ -263,7 +274,7 @@
         <a
           href="https://github.com/angular/angular"
           aria-label="Github"
-          target="_blank"
+        
           rel="noopener"
         >
           <svg
@@ -324,6 +335,12 @@
   </div>
 </main>
 
+<footer>
+  <div style="text-align: center; padding: 1rem; background-color: var(--gray-400);">
+    <p>&copy; 2024 Gestión de Cursos.</p>
+  </div>
+</footer>
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
@@ -333,4 +350,5 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-<router-outlet />
+
+

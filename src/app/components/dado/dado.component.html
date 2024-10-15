@@ -1,0 +1,11 @@
+
+
+<div class="dado-container">
+    <img [src]="'assets/dado/dado' + valor + '.png'" alt="Dado" class="dado-imagen" />
+
+    <span style="background-color: {{color}};">
+      {{ valor }}
+    </span>
+  </div>
+  <button (click)="lanzar()">Lanzar</button>
+  
