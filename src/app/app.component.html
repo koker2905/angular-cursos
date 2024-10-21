@@ -177,7 +177,16 @@
   }
 </style>
 
+
+<header>
+  <div style="text-align: center; padding: 1rem; background-color: var(--gray-400);">
+    <p style="font-size: 2rem;"> Gestión de Cursos.</p>
+  </div>
+</header>
+
+
 <main class="main">
+ 
   <div class="content">
     <div class="left-side">
       <svg
@@ -228,25 +237,21 @@
       
      <div>
 
-      <router-outlet />
+      <router-outlet></router-outlet>
+
 
      </div>
 
      
-
-
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
       <div class="pill-group">
         @for (item of [
-          { title: 'Explore the Docs', link: 'https://angular.dev' },
-          { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
-          { title: 'CLI Docs', link: 'https://angular.dev/tools/cli' },
-          { title: 'Angular Language Service', link: 'https://angular.dev/tools/language-service' },
-          { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' },
+        
           { title: 'Inicio:', link: 'http://localhost:4200/pages/inicio' },
-          { title: 'Mision:', link: 'http://localhost:4200/pages/mision' },
+          { title: 'Cursos:', link: 'http://localhost:4200/pages/cursos' },
+          { title: 'Agregar Cursos:', link: 'http://localhost:4200/pages/agregar-cursos' },
           { title: 'Acerca De:', link: 'http://localhost:4200/pages/acerca-de' },
         ]; track item.title) {
           <a
@@ -336,7 +341,7 @@
 </main>
 
 <footer>
-  <div style="text-align: center; padding: 1rem; background-color: var(--gray-400);">
+  <div style="text-align: center; padding: 1rem; background-color: var(--white);">
     <p>&copy; 2024 Gestión de Cursos.</p>
   </div>
 </footer>

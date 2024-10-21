@@ -1,1 +1,14 @@
-<p>cursos works!</p>
+<h2>Lista de Cursos</h2>
+<div *ngFor="let curso of cursos" class="curso">
+  <div class="informacion">
+    <h3>{{ curso.nombre }}</h3>
+    <p><strong>Instructor:</strong> {{ curso.instructor }}</p>
+    <p><strong>Fecha de Inicio:</strong> {{ curso.fecha }}</p>
+    <p><strong>Duración:</strong> {{ curso.duracion }} horas</p>
+    <button (click)="mostrarDetalles(curso)">Ver más detalles</button>
+    <button class="btn-eliminar" (click)="eliminarCurso(curso.nombre)">Eliminar</button>
+  </div>
+  <div class="descripcion" *ngIf="curso.mostrarDetalles">
+    <p><strong>Descripción:</strong> {{ curso.descripcion }}</p>
+  </div>
+</div>

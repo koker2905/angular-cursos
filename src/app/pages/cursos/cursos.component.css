@@ -1,0 +1,40 @@
+.curso {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: transform 0.3s;
+  }
+  
+  .curso:hover {
+    transform: scale(1.02);
+  }
+  
+  .descripcion {
+    margin-left: 20px;
+    display: none; /* Inicialmente oculta */
+  }
+  
+  button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  .btn-eliminar {
+    background-color: #dc3545;
+  }
+  
+  .btn-eliminar:hover {
+    background-color: #c82333;
+  }
+  
