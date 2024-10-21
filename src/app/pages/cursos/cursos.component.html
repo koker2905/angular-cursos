@@ -8,6 +8,7 @@
     <button (click)="mostrarDetalles(curso)">Ver más detalles</button>
     <button class="btn-eliminar" (click)="eliminarCurso(curso.nombre)">Eliminar</button>
   </div>
+
   <div class="descripcion" *ngIf="curso.mostrarDetalles">
     <p><strong>Descripción:</strong> {{ curso.descripcion }}</p>
   </div>

@@ -52,9 +52,9 @@ export class CursoService {
       try {
         if (this.obtenerCursos().length === 0) { // Si no hay cursos, inicializa
           const cursosIniciales = [
-            { nombre: 'Curso de Angular', descripcion: 'Aprende Angular desde cero', mostrarDetalles: false },
-            { nombre: 'Curso de React', descripcion: 'Introducción a React.js', mostrarDetalles: false },
-            { nombre: 'Curso de Vue', descripcion: 'Aprende Vue.js rápidamente', mostrarDetalles: false },
+            { nombre: "Matemáticas", instructor: "Juan Pérez", fecha: "2024-10-01", duracion: "40", descripcion: "Curso de matemáticas básicas y avanzadas.", mostrarDetalles: true },
+            { nombre: "Inglés", instructor: "María López", fecha: "2024-10-15", duracion: "30", descripcion: "Curso de inglés para principiantes.", mostrarDetalles: true  },
+          
           ];
           localStorage.setItem('cursos', JSON.stringify(cursosIniciales)); // Almacena los cursos iniciales en localStorage
         }
